@@ -1,0 +1,59 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10" style="background-color: rgba(148, 165, 192, 0.916);">
+    <main>
+     <div class="mt-1">
+        <!--div1 heading-->
+        <h1 class="text-3xl font-bold text-black-500">MY TO-DO LIST</h1>
+     </div>
+     <div class="mt-5">
+        <!--div2 todo form-->
+        <form>
+            <input class="border rounded px-2" type="text" placeholder="Add a new task">
+            <button class="bg-blue-600 text-white font-bold rounded px-2 " type="submit">Add</button>
+        </form>
+        <div class="mt-1">
+            <!--div3 todo list-->
+            <ul class="space-y-3">
+                <li>
+                    <input type="checkbox">GO TO GYM
+                <button>x</button>
+            </li>
+            <li>
+                <input type="checkbox"> Integrate todo list API
+                <button>&times;</button>
+            </li>
+            <li>
+                <input type="checkbox"> Learn tailwind CSS
+                <button>x</button>
+            </li>
+            <li>
+                <input type="checkbox"> Buy vegetables
+                <button>x</button>
+            </li>
+            </ul>
+        </div>
+        <div class="mt-8">
+            <!--div4 todo completed list-->
+            <h2 class="text-3xl text-500 mb-4 mt-4">Completed Task</h2>
+            <ul class="space-y-3">
+
+                <li>
+                    <input type="checkbox" checked> Learn css
+                </li>
+                <li>
+                    <input type="checkbox" checked> Learn html
+                </li>
+                <li>
+                    <input type="checkbox" checked> create a sample project
+                </li>
+            </ul>
+
+        </div>
+        
+       
+    </main>
+</body>
+</html>
