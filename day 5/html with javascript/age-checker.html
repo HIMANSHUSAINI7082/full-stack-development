@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+    <script>
+        // internal javascript
+        function handleInput() {
+            let age = document.getElementById("age").value;
+
+            let yourCategory = "";
+            if (age < 18) {
+                yourCategory = "You are a minor.";
+            } else if (age >= 18 && age <= 40) {
+                yourCategory = "You are an adult.";
+            } else if (age > 40 && age <= 60) {
+                yourCategory = "You are a middle-aged adult.";
+            } else {
+                yourCategory = "You are a senior citizen.";
+            }
+
+            document.getElementById("result").innerText = yourCategory;
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Age checker</h1>
+    <label>Enter your age</label>
+    <input type="number" id="age" placeholder="Enter age">
+    <button onclick="handleInput()">check</button>
+    <p id="result"></p>
+</body>
+
+
+</html>
