@@ -1,9 +1,11 @@
+import React from "react";
+import { RenderList } from "./RenderList";
 function App() {
-    return (
-        <div>
-            <h1>react is working</h1>
-        </div>
-    )
+  return (
+    <div>
+      <h1>Render List Component</h1>
+      <RenderList />
+    </div>
+  );
 }
-
-export { App }
+export {App};
